@@ -1,5 +1,5 @@
 {% set name = "dwave-tabu" %}
-{% set version = "0.4.4" %}
+{% set version = "0.4.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dwave-tabu-{{ version }}.tar.gz
-  sha256: c8fdb3fcc9316716edb8feff3dc5e47e4138cbdca1ced81121487a4986d76cda
+  sha256: 110884dd5e68bb7c9a8e6813d5d1f220819ea6b49f3654e5e07e5f4b697c0ee0
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 2
+  number: 0
 
 requirements:
   build:
