@@ -6,12 +6,12 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dwave-tabu-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/dwave-tabu-{{ version }}.tar.gz
   sha256: dcc73883ec491dea2656c8239dc66e9c9871e7f75852be57ea4cec6bccd48d54
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 2
+  number: 3
 
 requirements:
   build:
